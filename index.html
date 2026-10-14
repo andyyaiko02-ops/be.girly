@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#efb1c3">
+  <meta name="description" content="Be.girly: tu estilo, tus reglas, tu esencia. Descubre ropa y ofertas.">
+  <title>Be.girly | Tu estilo, tus reglas, tu esencia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Be.girly, inicio">
+      <img src="assets/logo-be-girly.png" alt="Be.girly — sé tú misma">
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#ofertas">OFERTAS</a>
+      <a href="#ingresos">INGRESOS</a>
+    </nav>
+
+    <button class="icon-button location-button" type="button" aria-label="Ubicación" title="Ubicación">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    </button>
+
+    <label class="search-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4 4"/></svg>
+      <input type="search" id="searchInput" placeholder="BUSCAR PRODUCTOS" aria-label="Buscar productos">
+      <button type="button" id="clearSearch" class="clear-search" aria-label="Limpiar búsqueda" hidden>×</button>
+    </label>
+
+    <button class="icon-button cart-button" id="cartButton" type="button" aria-label="Abrir carrito" title="Carrito">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <button class="icon-button profile-button" id="profileButton" type="button" aria-label="Mi perfil" title="Mi perfil">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+    </button>
+  </header>
+
+  <main id="inicio">
+    <!-- Banner principal original extraído del PDF -->
+    <section class="hero-banner" aria-label="Blusa Marie">
+      <img src="assets/banner-blusa-marie.png" alt="Blusa Marie: modelo con blusa rosada y opciones de moda">
+      <a class="hero-hotspot" href="#productos" aria-label="Ver productos de la colección"></a>
+    </section>
+
+    <!-- Campaña original: Nuestras prendas -->
+    <section class="collection-banner" aria-label="Nuestras prendas">
+      <img src="assets/banner-nuestras-prendas.png" alt="Nuestras prendas — Shop now">
+      <a href="#productos" class="collection-hotspot" aria-label="Comprar nuestras prendas"></a>
+    </section>
+
+    <section id="productos" class="catalog-section">
+      <h2 class="section-band"><span>★</span> NUESTROS PRODUCTOS <span>★</span></h2>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-name="Top Basic" data-price="30.00" data-category="producto">
+          <img src="assets/top-basic.png" alt="Top Basic blanco" class="product-photo">
+          <div class="product-caption"><h3>TOP BASIC</h3><p>S/30.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="product-card" data-name="Wade Lage" data-price="80.00" data-category="producto">
+          <img src="assets/wade-lage.png" alt="Pantalón Wade Lage negro" class="product-photo">
+          <div class="product-caption"><h3>WADE LAGE</h3><p>S/80.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="product-card" data-name="Basic Shirt" data-price="30.00" data-category="producto">
+          <img src="assets/basic-shirt.png" alt="Basic Shirt blanco" class="product-photo">
+          <div class="product-caption"><h3>BASIC SHIRT</h3><p>S/30.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="product-card" data-name="Casaca Top" data-price="60.00" data-category="producto">
+          <img src="assets/casaca-top.png" alt="Casaca Top a rayas" class="product-photo">
+          <div class="product-caption"><h3>CASACA TOP</h3><p>S/60.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="product-card" data-name="Flare Jean" data-price="80.00" data-category="producto">
+          <img src="assets/flare-jean.png" alt="Flare Jean de mezclilla" class="product-photo">
+          <div class="product-caption"><h3>FLARE JEAN</h3><p>S/80.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="product-card" data-name="Polera Asimetrica" data-price="55.00" data-category="producto">
+          <img src="assets/polera-asimetrica.png" alt="Polera asimétrica azul marino" class="product-photo">
+          <div class="product-caption"><h3>POLERA ASIMÉTRICA</h3><p>S/55.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="product-card" data-name="Casaca Rose" data-price="55.00" data-category="producto">
+          <img src="assets/casaca-rose.png" alt="Casaca Rose azul marino" class="product-photo">
+          <div class="product-caption"><h3>CASACA ROSE</h3><p>S/55.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="product-card" data-name="Basic" data-price="25.00" data-category="producto">
+          <img src="assets/basic.png" alt="Top Basic color berenjena" class="product-photo">
+          <div class="product-caption"><h3>BASIC</h3><p>S/25.00</p></div>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+      </div>
+      <p id="emptyMessage" class="empty-message" hidden>No encontramos prendas con ese nombre.</p>
+    </section>
+
+    <section id="ingresos" class="new-arrival-banner" aria-label="Nuevo ingreso">
+      <img src="assets/banner-nuevo-ingreso.png" alt="Nuevo ingreso: Baggie Jean, tallas disponibles STD a XL, S/90.00">
+      <button class="banner-buy-button" type="button" data-banner-product="Baggie Jean" data-banner-price="90.00">Comprar Baggie Jean</button>
+    </section>
+
+    <section id="ofertas" class="offers-section">
+      <h2 class="section-band"><span>★</span> OFERTAS <span>★</span></h2>
+      <div class="offer-grid" id="offerGrid">
+        <article class="offer-card" data-name="Blusa botones" data-price="45.00" data-category="oferta">
+          <img src="assets/blusa-botones.png" alt="Blusa botones en color amarillo pastel, oferta">
+          <h3>Blusa botones</h3>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="offer-card" data-name="Básico manga larga" data-price="45.00" data-category="oferta">
+          <img src="assets/basico-manga-larga.png" alt="Básico de manga larga rosado a rayas, oferta">
+          <h3>Básico manga larga</h3>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="offer-card" data-name="Blusa corte asimétrico" data-price="45.00" data-category="oferta">
+          <img src="assets/blusa-asimetrica.png" alt="Blusa de corte asimétrico marrón, oferta">
+          <h3>Blusa corte asimétrico</h3>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+        <article class="offer-card" data-name="Básico manga corta" data-price="45.00" data-category="oferta">
+          <img src="assets/basico-manga-corta.png" alt="Básico de manga corta blanco y rosado, oferta">
+          <h3>Básico manga corta</h3>
+          <button class="buy-button" type="button">Añadir al carrito</button>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <img class="footer-slogan" src="assets/slogan-tu-estilo.png" alt="Tu estilo, tus reglas, tu esencia">
+      <p class="footer-handle">@be.girly</p>
+    </footer>
+  </main>
+
+  <!-- Modal reutilizable para confirmaciones y resumen del carrito -->
+  <div class="modal-backdrop" id="confirmationModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalMessage">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Cerrar ventana">×</button>
+      <div class="modal-check" aria-hidden="true">✓</div>
+      <p class="modal-kicker">BE.GIRLY</p>
+      <h2 id="modalTitle">¡Solicitud registrada con éxito!</h2>
+      <p id="modalMessage">Tu selección se ha añadido al carrito.</p>
+      <button class="modal-action" id="modalContinue" type="button">Seguir comprando</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
